@@ -222,7 +222,7 @@ tree_error_lowess <- lapply(tree_error,
                             })
 
 
-date <- "20210321"
+date <- " "
 job <- "class"
 Boot <- T
 lgd <- F

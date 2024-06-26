@@ -1,6 +1,6 @@
 
 # This file contains functions used in simulations for 
-# Figure 4 to 6 in the paper.
+# Figure 5, B1 and B2 in the paper.
 
 
 # enlist is from the best-subset package.

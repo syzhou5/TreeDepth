@@ -1,6 +1,6 @@
 
 # This file contains functions used in simulations for 
-# Figure 7 to 10 in the paper.
+# Figure 4 and B3 to B6 in the paper.
 
 # The following two are from the best-subset package.
 # https://github.com/ryantibs/best-subset
@@ -141,7 +141,7 @@ agg_data <- function(obj){
     
     for (i in 1:2) {
       
-      # j: loop for the default random forest and gagging
+      # j: loop for the default random forest and bagging
       for (j in 1:2) {
         MSE[[k]][[i]][['Ave']][[j]] <- MSE[[k]][[i]][['Raw']][[j]] %>% rowMeans(na.rm = T) %>% matrix(nrow = l_maxnd)
         MSE[[k]][[i]][['Std']][[j]] <- apply(MSE[[k]][[i]][['Raw']][[j]], 1, sd, na.rm = T)/

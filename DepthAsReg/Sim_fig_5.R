@@ -1,6 +1,6 @@
 
 # This file contains example codes of simulations for 
-# Figure 4 to 6.
+# Figure 5, B1 and B2.
 
 # Here we consider the case of the low setting with 
 # n = 100, p = 10 and s = 5. Others can be obtained 
@@ -10,6 +10,7 @@
 library(randomForest)
 library(ggplot2)
 library(tidyverse)
+source("Functions_fig_5.R")
 
 # The following is the wrapper function that can be run in
 # parallel for repeating the simulation 100 times.

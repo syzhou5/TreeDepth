@@ -1,6 +1,6 @@
 
 # This file contains example codes of simulations for 
-# Figure 7 to 10.
+# Figure 4 and B3 to B6.
 
 # The following is for Figure 7. To generate the other 
 # 3 plots, just modify the parameters for data generation.
@@ -17,6 +17,7 @@ library(tidyverse)
 require(ggplot2)
 require(grid)
 require(gridExtra)
+source("Functions_fig_4.R")
 
 
 # The following is the wrapper function that can be run in
@@ -126,6 +127,7 @@ gp_rfbag <- vector(mode = "list", length = ls)
 
 for (j in 1:ls) {
   
+  # Extract results with ntree = 500
   dat_rfbag <- data.frame(maxnodes = rep(maxnodes, 2),
                           MSE      = c(
                             dt_summary$MSE[[j]]$Test$Ave$Forest[, l_ntree] %>% as.numeric(), 
